@@ -686,7 +686,8 @@ main {
 }
 .about-us__item:hover {
     transform: scale(1.05);
-}
+} 
+
 .about-us__item-wrapper {
     display: flex;
     align-items: center;
