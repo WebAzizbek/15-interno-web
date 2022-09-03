@@ -724,6 +724,33 @@ main {
 }
 
 
+/* PARTNERS STYLES */
+.partners {
+    margin-bottom: 11.3rem;
+}
+
+.partners__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 8rem;
+    row-gap: 4rem;
+    justify-items: center;
+    align-items: center;
+}
+.partners__item {
+}
+.partners__item-img {
+    object-fit: contain;
+    object-position: center;
+    transition: all 0.5s;
+}
+.partners__item-img:hover {
+    transform: scale(1.15);
+    opacity: 0.9;
+    
+}
+
+
 
 
 
@@ -884,6 +911,15 @@ main {
     .about-us__title {
         font-size: 3.5rem; 
     }
+    .partners__list {
+        column-gap: 6rem;
+    }
+    .partners__item:nth-child(2) .partners__item-img {
+        width: 70%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
 }
 
@@ -970,6 +1006,9 @@ main {
     }
     .call__phone-number span:first-child {
         font-size: 1.5rem;
+    }
+    .partners {
+        margin-bottom: 10rem;
     }
 }
 
