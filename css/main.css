@@ -339,7 +339,6 @@ main {
 }
 .site-btn {
     border-radius: 1.8rem;
-    background-color: var(--blue-bg-color);
     display: inline-flex;
     align-items: center;
     font-size: 1.8rem;
@@ -349,6 +348,7 @@ main {
     border: 2px solid var(--blue-bg-color);
     transition: all 0.2s ease;
     overflow: hidden;
+    background-color: var(--blue-bg-color);
 }
 
 .site-btn:hover {
@@ -973,6 +973,58 @@ main {
     animation: animation-information 2s ease;
 }
 
+/* CONSULTATION */
+.conlsultation {
+    margin-bottom: 13rem;
+}
+.consultation__inner {
+    background-color: var(--blue-bg-color);
+    padding: 10rem 33.3rem 9.5rem;
+    border-radius: 70px;
+    text-align: center;
+}
+.consultation__title {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+}
+.consultation__title:hover {
+    text-shadow: 0px 0px 10px var(--color-white),
+                0px 0px 15px var(--color-white),
+                0px 0px 20px var(--color-white);
+}
+.consultation__text {
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 3rem;
+    transition: all 0.5s;
+}
+.consultation__text:hover {
+    text-shadow: 0px 0px 10px var(--color-white),
+                0px 0px 12px var(--color-white),
+                0px 0px 15px var(--color-white);
+}
+.consultation__btn {
+    background-color: var(--primary-color);
+    padding: 1.9rem 1.5rem 1.9rem 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    border-color: var(--primary-color);
+}
+.consultation__btn:hover span {
+    color: var(--primary-color);
+}
+
+.consultation__btn:hover .consultation-btn-icon svg path {
+    stroke: var(--primary-color)
+}
+
 
 
 
@@ -996,6 +1048,13 @@ main {
 
 
 /* RESPONSIVE */
+@media only screen and (max-width: 1260px) {
+    .consultation__inner {
+        padding: 10rem 20.3rem 9.5rem;
+    }
+
+
+}
 @media only screen and (max-width: 1236px) {
 
 
@@ -1062,6 +1121,12 @@ main {
     }
     .projects__img {
         margin-bottom: 1.4rem;
+    }
+    .consultation__title {
+        font-size: 4.5rem;
+    }
+    .consultation__inner {
+        padding: 10rem 1.3rem 9.5rem;
     }
 }
 
@@ -1154,6 +1219,9 @@ main {
         margin-left: auto;
         margin-right: auto;
     }
+    .consultation__title {
+        font-size: 4rem;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1208,6 +1276,25 @@ main {
     }
     .blogs__title {
         font-size: 4rem;
+    }
+    .conlsultation {
+        margin-bottom: 9rem;
+    }
+    .consultation__title {
+        font-size: 3.4rem;
+        margin-bottom: 0.5rem;
+    }
+    .consultation__text {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    .consultation__btn {
+        background-color: var(--primary-color);
+        padding: 1.5rem 1.1rem 1.5rem 2.6rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 400;
+        border-color: var(--primary-color);
     }
 
     
@@ -1275,7 +1362,12 @@ main {
     }
     .blogs {
         padding: 0;
+        margin-bottom: 3rem;
     }
+    .consultation__inner {
+        padding: 5rem 1.3rem 5.5rem;
+    }
+
 
     
 
@@ -1360,6 +1452,18 @@ main {
     .blogs__text {
         margin-bottom: 5rem;
     }
+    .blogs {
+        margin-bottom: 3rem;
+    }
+    .consultation__title {
+        font-size: 3rem;
+    }
+    .consultation__text {
+        margin-bottom: 2rem;
+    }
+    .consultation__btn {
+        padding: 1rem 0.6rem 1rem 2.1rem;
+    }
 }    
 
 
@@ -1391,6 +1495,6 @@ only screen and (                min-resolution: 2dppx) {
     }
     .blogs__item:nth-child(6) .blogs__img {
         background-image: url(../images/jpg/blogs-six@2x.jpg);
-    }@2x
+    }
 }
 
