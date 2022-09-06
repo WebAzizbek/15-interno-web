@@ -1026,6 +1026,106 @@ main {
 }
 
 
+/* FOOTER */
+footer {
+
+}
+
+/* FOOTER TOP STYLES */
+.footer-top {
+    padding-top: 5rem;
+    border-bottom: 1px solid var(--gray-bg-color);
+}
+.footer-top__list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top__list li {
+    padding: 1rem;
+}
+.footer-top__list li:nth-child(2) .footer-top__text:first-child {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--blue-bg-color);
+}
+.footer-top__list li:nth-child(3) .footer-top__text:first-child {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--blue-bg-color);
+}
+.footer-top__list li:nth-child(4) .footer-top__text:first-child {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--blue-bg-color);
+}
+.footer-top__interno {
+    width: 100%;
+    max-width: 326px;
+}
+.footer-top__interno-logo {
+    display: inline-flex;
+    transition: transform 0.5s;
+    margin-bottom: 2.3rem;
+}
+.footer-top__interno-logo:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+.footer-top__interno-logo:active {
+    transform: scale(1.05);
+    opacity: 0.6;
+}
+.footer-top__interno-logo__img {
+}
+.footer-top__interno-text {
+    width: 100%;
+    max-width: 326px;
+    margin-bottom: 3rem;
+}
+.footer-top__interno-apk-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-top__interno-apk-wrapper svg {
+    transition: all 0.7s;
+}
+.footer-top__interno-apk-wrapper svg:hover {
+    transform: scale(1.5);  
+}
+.footer-top__interno-apk-wrapper svg:hover path {
+    fill: var(--primary-color)
+}
+.footer-top__pages {
+}
+.footer-top__text {
+    margin-bottom: 3rem;
+    transition: transform 0.3s;
+}
+.footer-top__text:hover {
+    transform: scale(1.07);
+    color: var(--primary-color);
+}
+.footer-top__explore {
+}
+.footer-top__contact {
+    width: 100%;
+    max-width: 321px;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    padding: 3.5rem 0;
+    text-align: center;
+}
+.footer-bottom__text span {
+    color: var(--primary-color);
+}
+
+
 
 
 
@@ -1169,6 +1269,35 @@ main {
     .static__item:nth-child(2) {
         border-right: none;
     }
+    .footer-top__text {
+        font-size: 1.7rem;
+        margin-bottom: 2.5rem;
+        transition: transform 0.3s;
+    }
+    .footer-top__text:hover {
+        transform: scale(1.04);
+    }
+    .footer-top__list li:nth-child(2) .footer-top__text:first-child {
+        font-family: var(--font-serif);
+        font-size: 2rem;
+        line-height: 1.5;
+        color: var(--blue-bg-color);
+    }
+    .footer-top__list li:nth-child(3) .footer-top__text:first-child {
+        font-family: var(--font-serif);
+        font-size: 2rem;
+        line-height: 1.5;
+        color: var(--blue-bg-color);
+    }
+    .footer-top__list li:nth-child(4) .footer-top__text:first-child {
+        font-family: var(--font-serif);
+        font-size: 2rem;
+        line-height: 1.5;
+        color: var(--blue-bg-color);
+    }
+    .footer-bottom__text {
+        font-size: 2rem;
+    }
 
 }
 
@@ -1296,8 +1425,35 @@ main {
         font-weight: 400;
         border-color: var(--primary-color);
     }
+    .footer-top__interno {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-top__contact {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        text-align: center;
+    }
+    .footer-top__list {
+        flex-direction: column;
+    }
+    .footer-top__text {
+        font-size: 2.5rem;
+    }
+    .footer-top__list li:nth-child(2) .footer-top__text:first-child {
+        font-size: 3rem;
+    }
+    .footer-top__list li:nth-child(3) .footer-top__text:first-child {
+        font-size: 3rem;
+    }
+    .footer-top__list li:nth-child(4) .footer-top__text:first-child {
+        font-size: 3rem;
+    }
 
-    
 }
 
 @media only screen and (max-width: 480px) {
@@ -1366,6 +1522,9 @@ main {
     }
     .consultation__inner {
         padding: 5rem 1.3rem 5.5rem;
+    }
+    .footer-top__text {
+        margin-bottom: 1rem;
     }
 
 
